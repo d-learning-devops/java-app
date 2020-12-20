@@ -1,1 +1,1 @@
-<h1>Docker CI-CD : DevOps Training</h1>
+<h1>Java Application in Tomcat : Jenkins Project 2</h1>
