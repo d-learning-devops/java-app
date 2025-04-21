@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/java-app"
+        DOCKER_IMAGE = "dwijalearning/java-app"
         TAG = "latest"
     }
 
