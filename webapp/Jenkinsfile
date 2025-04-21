@@ -39,7 +39,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
-                    sed -i "s|your-dockerhub-username/java-app:latest|$DOCKER_IMAGE:$TAG|g" k8s/deployment.yaml
+                    sed -i "s|USER/java-app:latest|$DOCKER_IMAGE:$TAG|g" k8s/deployment.yaml
                     kubectl apply -f k8s/deployment.yaml
                     kubectl apply -f k8s/service.yaml
                 '''
